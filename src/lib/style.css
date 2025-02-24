@@ -1,0 +1,105 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css');
+@import url(./styles/text.css);
+@import url(./styles/icon.css);
+@import url(./styles/input.css);
+@import url(./styles/box.css);
+
+:root {
+	--primary: #023d89;
+	--secondary: #1f79ec;
+	--white: #ffffff;
+	--dark0: #dddddd;
+	--dark1: #c2c2c2;
+	--dark2: #555555;
+	--dark3: #333333;
+	--dark4: #111111;
+	--error: #de3412;
+	--warning: #9e6a00;
+
+	--primary-half: #023d8980;
+	--secondary-half: #1f79ec80;
+	--white-half: #ffffff80;
+	--dark0-half: #dddddd80;
+	--dark1-half: #c2c2c280;
+	--dark2-half: #55555580;
+	--dark3-half: #33333380;
+	--dark4-half: #11111180;
+	--error-half: #de341280;
+	--warning-half: #9e6a0080;
+
+	--small-s: 0.8rem;
+	--regular-s: 1rem;
+	--large-s: 1.5rem;
+	--xlarge-s: 2rem;
+	--xxlarge-s: 3rem;
+
+	--thin-w: 300;
+	--medi-w: 400;
+	--semi-w: 500;
+	--bold-w: 700;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	word-break: keep-all;
+	font-family:
+		'Pretendard GOV',
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		'Open Sans',
+		'Helvetica Neue',
+		sans-serif;
+	color: var(--dark4);
+	border: none;
+	outline: none;
+	background: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+*::-webkit-scrollbar-track {
+	-webkit-box-shadow: none;
+	background-color: none;
+}
+
+*::-webkit-scrollbar {
+	width: 0.2rem;
+	height: 0.2rem;
+	background-color: none;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: none;
+}
+
+
+*:hover::-webkit-scrollbar-track {
+	-webkit-box-shadow: none;
+	background-color: var(--dark0);
+}
+
+*:hover::-webkit-scrollbar {
+	width: 0.2rem;
+	height: 0.2rem;
+	background-color: var(--dark0);
+	border-radius: 12px;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+	background-color: var(--dark2);
+	border-radius: 12px;
+}

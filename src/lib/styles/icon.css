@@ -1,0 +1,18 @@
+@import url(../style.css);
+
+/* size */
+.small-icon {
+    height: var(--small-s);
+}
+.regular-icon {
+    height: var(--regular-s);
+}
+.large-icon {
+    height: var(--large-s);
+}
+.xlarge-icon {
+    height: var(--xlarge-s);
+}
+.xxlarge-icon {
+    height: var(--xxlarge-s);
+}

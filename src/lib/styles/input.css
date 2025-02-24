@@ -1,0 +1,39 @@
+@import url(../style.css);
+a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    width: fit-content;
+
+    &:hover {
+        * {
+            text-decoration: underline;
+        }
+    }
+}
+
+input[type='button'],
+input[type='submit'],
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+
+        * {
+            text-decoration: underline;
+        }
+    }
+}
+
+input[type='date']::before {
+    content: attr(data-placeholder);
+}

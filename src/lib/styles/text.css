@@ -1,0 +1,90 @@
+@import url(../style.css);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: fit-content;
+	height: fit-content;
+}
+
+/* alignment */
+.left-t {
+	justify-content: flex-start;
+}
+.center-t {
+	justify-content: center;
+}
+.right-t {
+	justify-content: flex-end;
+}
+
+/* size */
+.small-t {
+	font-size: var(--small-s);
+}
+.regular-t {
+	font-size: var(--regular-s);
+}
+.large-t {
+	font-size: var(--large-s);
+}
+.xlarge-t {
+	font-size: var(--xlarge-s);
+}
+.xxlarge-t {
+	font-size: var(--xxlarge-s);
+}
+
+/* color */
+.primary-t {
+	color: var(--primary);
+}
+.secondary-t {
+	color: var(--secondary);
+}
+.white-t {
+	color: var(--white);
+}
+.dark0-t {
+	color: var(--dark0);
+}
+.dark1-t {
+	color: var(--dark1);
+}
+.dark2-t {
+	color: var(--dark2);
+}
+.dark3-t {
+	color: var(--dark3);
+}
+.dark4-t {
+	color: var(--dark4);
+}
+.error-t {
+	color: var(--error);
+}
+.warning-t {
+	color: var(--warning);
+}
+
+/* weight */
+.thin-t {
+	font-weight: var(--thin-w);
+}
+.medi-t {
+	font-weight: var(--medi-w);
+}
+.semi-t {
+	font-weight: var(--semi-w);
+}
+.bold-t {
+	font-weight: var(--bold-w);
+}
