@@ -38,12 +38,10 @@
 		<input type="password" name="" id="" class="regular-t" placeholder="비밀번호 확인" />
 	</div>
 	<div class="hori gap-5 width-20">
-		<button class="dark2-back gap-5 width-100p padding-v1">
-			<img src={cert} alt="" class="large-icon" />
+		<button class="dark2-back width-100p padding-v1">
 			<p class="regular-t semi-t white-t">교수</p>
 		</button>
-		<button class="dark2-back gap-5 width-100p padding-v1">
-			<img src={cert} alt="" class="large-icon" />
+		<button class="dark2-back width-100p padding-v1">
 			<p class="regular-t semi-t white-t">투자자</p>
 		</button>
 	</div>
