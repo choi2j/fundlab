@@ -438,6 +438,9 @@
 	border: 2px solid var(--dark4);
 	border-radius: 12px;
 }
+.noradius {
+	border-radius: 0;
+}
 
 /* shadow */
 .shadow {
