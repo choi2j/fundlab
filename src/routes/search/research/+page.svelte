@@ -38,6 +38,7 @@
 
 	searchResult = [
 		{
+			id: 12345,
 			thumbnail: square,
 			title: 'temp title',
 			who: 'temp who',

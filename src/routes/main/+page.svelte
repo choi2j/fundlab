@@ -12,6 +12,7 @@
 
 	recommendResult = [
 		{
+			id: 1,
 			thumbnail: square,
 			title: '모바일 수집형 RPG의 사용자 분석: "쿠키런:킹덤"을 중심으로',
 			who: 'temp who',
@@ -24,6 +25,7 @@
 			tag: ['AI', 'Security']
 		},
 		{
+			id: 12,
 			thumbnail: square,
 			title: '버추얼 아이돌 특성이 버추얼 아이돌 공연 수용자 태도에 미치는 영향',
 			who: 'temp who',
@@ -36,6 +38,7 @@
 			tag: ['AI', 'Security']
 		},
 		{
+			id: 123,
 			thumbnail: square,
 			title:
 				'First unambiguous detection of ammonia in the atmosphere of a planetary mass companion with JWST/MIRI coronagraphs',

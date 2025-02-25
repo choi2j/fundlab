@@ -37,6 +37,16 @@
 		<img src={pass} alt="" class="large-icon" />
 		<input type="password" name="" id="" class="regular-t" placeholder="비밀번호 확인" />
 	</div>
+	<div class="hori gap-5 width-20">
+		<button class="dark2-back gap-5 width-100p padding-v1">
+			<img src={cert} alt="" class="large-icon" />
+			<p class="regular-t semi-t white-t">교수</p>
+		</button>
+		<button class="dark2-back gap-5 width-100p padding-v1">
+			<img src={cert} alt="" class="large-icon" />
+			<p class="regular-t semi-t white-t">투자자</p>
+		</button>
+	</div>
 	<button class="padding-h3 padding-v1 primary-back gap-5 width-20">
 		<img src={cert} alt="" class="large-icon" />
 		<p class="regular-t semi-t white-t">본인인증</p>

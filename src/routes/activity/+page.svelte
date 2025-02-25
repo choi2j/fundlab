@@ -20,11 +20,8 @@
 			</div>
 		</div>
 		<div class="hori width-100p height-30p">
-			<div class="vert width-50p">
+			<div class="vert width-100p">
 				<h1 class="large-t bold-t dark4-t">새 연구 작성</h1>
-			</div>
-			<div class="vert width-50p">
-				<h1 class="large-t bold-t dark4-t">연구 계획서 관리</h1>
 			</div>
 		</div>
 	</div>
