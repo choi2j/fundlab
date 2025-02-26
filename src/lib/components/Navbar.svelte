@@ -8,7 +8,7 @@
 	import inquiry from '$lib/assets/icon/inquiry.svg';
 	import myinfo from '$lib/assets/icon/myinfo.svg';
 
-	let { pathname } = $props();
+	let { pathname, userState } = $props();
 </script>
 
 <div class="vert padding-3 shadow">
@@ -45,14 +45,25 @@
 			</a>
 		</li>
 		<li>
-			<a href="/activity" class="hori gap-10">
-				<img src={document} alt="" class="large-icon" />
-				{#if pathname === '/activity'}
-					<p class="regular-t dark4-t bold-t">내 활동</p>
-				{:else}
-					<p class="regular-t dark2-t semi-t">내 활동</p>
-				{/if}
-			</a>
+			{#if userState === 'prof'}
+				<a href="/activity/prof" class="hori gap-10">
+					<img src={document} alt="" class="large-icon" />
+					{#if pathname === '/activity/prof' || '/activity/inve'}
+						<p class="regular-t dark4-t bold-t">내 활동</p>
+					{:else}
+						<p class="regular-t dark2-t semi-t">내 활동</p>
+					{/if}
+				</a>
+			{:else}
+				<a href="/activity/inve" class="hori gap-10">
+					<img src={document} alt="" class="large-icon" />
+					{#if pathname === '/activity'}
+						<p class="regular-t dark4-t bold-t">내 활동</p>
+					{:else}
+						<p class="regular-t dark2-t semi-t">내 활동</p>
+					{/if}
+				</a>
+			{/if}
 		</li>
 		<li>
 			<a href="/message" class="hori gap-10">

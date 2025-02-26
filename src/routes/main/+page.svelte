@@ -54,10 +54,16 @@
 	];
 
 	let pathname = $state(page.url.pathname);
+	let user: User = $state({
+		name: 'string',
+		where: 'string',
+		type: 'prof',
+		profile: square
+	});
 </script>
 
 <div class="fs hori">
-	<Navbar {pathname} />
+	<Navbar {pathname} userState={user.type} />
 	<div class="vert fs padding-3 gap-10">
 		<div class="padding-1 noborder hori center gap-10 width-100p shadow margin-b1">
 			<input type="text" name="" id="" class="fs dark4-t regular-t medi-t" />

@@ -1,4 +1,5 @@
 type Research = {
+	type: 'research';
 	id: number;
 	thumbnail: string;
 	title: string;
@@ -12,6 +13,7 @@ type Research = {
 };
 
 type Investment = {
+	type: 'invest';
 	id: number;
 	thumbnail: string;
 	title: string;
@@ -41,7 +43,7 @@ type ProfileInfo = {
 	where: string;
 	type: string;
 	profile: string;
-	summary: string;
+	summary?: string;
 };
 
 type PersonalInfo = {
@@ -52,4 +54,5 @@ type PersonalInfo = {
 	myWork?: Research[] | Investment[];
 	profile: string;
 	history?: Research[] | Investment[];
+	bookmark?: Research[] | Investment[];
 };
