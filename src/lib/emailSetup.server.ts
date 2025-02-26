@@ -1,0 +1,25 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import nodemailer from "nodemailer";
+import { GOOGLE_EMAIL, GOOGLE_EMAIL_PASSWORD } from "$env/static/private";
+
+const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+        user: GOOGLE_EMAIL,
+        pass: GOOGLE_EMAIL_PASSWORD,
+    },
+});
+
+transporter.verify(function (error, success) {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log("Server is ready to take our messages");
+    }
+});
+
+export default transporter
