@@ -7,6 +7,15 @@
 	import pass from '$lib/assets/icon/login_id_password.svg';
 	import cert from '$lib/assets/icon/certification_simple_white.svg';
 	import login from '$lib/assets/icon/login_white.svg';
+	import { enhance } from "$app/forms";
+	import { email } from '$lib/store';
+	console.log($email);
+	let formData = {
+		email: $email,
+	};
+	function handleSubmit() {
+		email.set(formData.email);
+	}
 </script>
 
 <div class="center fs vert gap-5">
@@ -17,15 +26,15 @@
 	</div>
 	<div class="padding-1 hori gap-5 width-20 dark1-border-2">
 		<img src={person} alt="" class="large-icon" />
-		<form method="POST">
-			<input type="email" name="target" id="" class="regular-t" placeholder="메일주소" />
+		<form method="POST" action="?/register" use:enhance on:submit={handleSubmit}>
+			<input type="email" name="target" id="" class="regular-t" placeholder="mailaddress" bind:value={formData.email} />
 			<button class="dark2-t small-t semi-t" name="action" value="sendMail" type="submit">인증</button>
 		</form>
 	</div>
 	<div class="padding-1 hori gap-5 width-20 dark1-border-2">
 		<img src={person} alt="" class="large-icon" />
-		<form method="POST">
-			<input type="text" name="verifyNumber" id="" class="regular-t" placeholder="인증번호" />
+		<form method="POST" action="?/verify" use:enhance>
+			<input type="text" name="verifyNumber" id="inputNum" class="regular-t" placeholder="인증번호" />
 			<button class="dark2-t small-t semi-t" name="action" value="sendNumber" type="submit">확인</button>
 		</form>
 
