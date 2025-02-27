@@ -21,7 +21,6 @@
 			<input type="email" name="target" id="" class="regular-t" placeholder="메일주소" />
 			<button class="dark2-t small-t semi-t" name="action" value="sendMail" type="submit">인증</button>
 		</form>
-
 	</div>
 	<div class="padding-1 hori gap-5 width-20 dark1-border-2">
 		<img src={person} alt="" class="large-icon" />

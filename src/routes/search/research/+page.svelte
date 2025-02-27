@@ -86,10 +86,16 @@
 			content: 'bookmark only'
 		}
 	];
+	let user: User = $state({
+		name: 'string',
+		where: 'string',
+		type: 'prof',
+		profile: square
+	});
 </script>
 
 <div class="fs hori">
-	<Navbar {pathname} />
+	<Navbar {pathname} userState={user.type} />
 	<div class="vert width-60p padding-3 gap-10">
 		<div class="padding-1 noborder hori center gap-10 width-100p shadow">
 			<input type="text" name="" id="" class="fs dark4-t regular-t medi-t" />
@@ -147,7 +153,7 @@
 			<div class="hori width-100p gap-10 margin-ta">
 				<a
 					class="primary-back width-70p padding-1 white-t regular-t bold-t"
-					href="/search/{sel.title}"
+					href="/search/research/{sel.id}"
 				>
 					자세한 내용
 				</a>
