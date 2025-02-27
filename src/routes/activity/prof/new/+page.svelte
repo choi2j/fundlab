@@ -18,5 +18,7 @@
 
 <div class="fs hori">
 	<Navbar {pathname} userState={user.type} />
-	
+	<div class="padding-3 vert fs">
+		<input type="text" name="" id="" class="">
+	</div>
 </div>

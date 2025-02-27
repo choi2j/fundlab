@@ -86,7 +86,6 @@ body {
 	background-color: none;
 }
 
-
 *:hover::-webkit-scrollbar-track {
 	-webkit-box-shadow: none;
 	background-color: var(--dark0);

@@ -2,7 +2,7 @@ type Research = {
 	type: 'research';
 	id: number;
 	thumbnail: string;
-	title: string;
+	title: string;	
 	who: string;
 	where: string;
 	views: number;
