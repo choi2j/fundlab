@@ -19,14 +19,17 @@
 		<img src={person} alt="" class="large-icon" />
 		<form method="POST">
 			<input type="email" name="target" id="" class="regular-t" placeholder="메일주소" />
-			<button class="dark2-t small-t semi-t" type="submit">인증</button>
+			<button class="dark2-t small-t semi-t" name="action" value="sendMail" type="submit">인증</button>
 		</form>
 
 	</div>
 	<div class="padding-1 hori gap-5 width-20 dark1-border-2">
 		<img src={person} alt="" class="large-icon" />
-		<input type="text" name="" id="" class="regular-t" placeholder="인증번호" />
-		<button class="dark2-t small-t semi-t">확인</button>
+		<form method="POST">
+			<input type="text" name="verifyNumber" id="" class="regular-t" placeholder="인증번호" />
+			<button class="dark2-t small-t semi-t" name="action" value="sendNumber" type="submit">확인</button>
+		</form>
+
 	</div>
 	<div class="padding-1 hori center gap-5 width-20 dark1-border-2">
 		<img src={calendar} alt="" class="large-icon" />
