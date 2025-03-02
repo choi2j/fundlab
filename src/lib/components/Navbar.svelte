@@ -15,7 +15,7 @@
 		<img src={logo} alt="" class="img-small" />
 	</div>
 	<div class="width-100p flex-column flex-start-a gap-5 margin-20v">
-		<a href="/main" class="flex-row flex-center gap-5 padding-10a">
+		<a href="/main" class="flex-row flex-center gap-5 padding-5a">
 			<img src={home} alt="" class="icon-regular" />
 			{#if pathname == '/main'}
 				<p class="dark5-t text-bold text-medi">메인화면</p>
@@ -23,7 +23,7 @@
 				<p class="dark3-t text-semi text-medi">메인화면</p>
 			{/if}
 		</a>
-		<a href="/search/research" class="flex-row flex-center gap-5 padding-10a">
+		<a href="/search/research" class="flex-row flex-center gap-5 padding-5a">
 			<img src={search} alt="" class="icon-regular" />
 			{#if pathname == '/search/research'}
 				<p class="dark5-t text-bold text-medi">연구찾기</p>
@@ -31,7 +31,7 @@
 				<p class="dark3-t text-semi text-medi">연구찾기</p>
 			{/if}
 		</a>
-		<a href="/search/investment" class="flex-row flex-center gap-5 padding-10a">
+		<a href="/search/investment" class="flex-row flex-center gap-5 padding-5a">
 			<img src={search} alt="" class="icon-regular" />
 			{#if pathname == '/search/investment'}
 				<p class="dark5-t text-bold text-medi">투자찾기</p>
@@ -40,7 +40,7 @@
 			{/if}
 		</a>
 		{#if user.usertype === 'researcher'}
-			<a href="/mywork/research/{user.username}" class="flex-row flex-center gap-5 padding-10a">
+			<a href="/mywork/research/{user.username}" class="flex-row flex-center gap-5 padding-5a">
 				<img src={document} alt="" class="icon-regular" />
 				{#if pathname == `/mywork/research/${user.username}`}
 					<p class="dark5-t text-bold text-medi">내 활동</p>
@@ -49,7 +49,7 @@
 				{/if}
 			</a>
 		{:else}
-			<a href="/mywork/investment/{user.username}" class="flex-row flex-center gap-5 padding-10a">
+			<a href="/mywork/investment/{user.username}" class="flex-row flex-center gap-5 padding-5a">
 				<img src={document} alt="" class="icon-regular" />
 				{#if pathname == `/mywork/investment/${user.username}`}
 					<p class="dark5-t text-bold text-medi">내 활동</p>
@@ -58,7 +58,7 @@
 				{/if}
 			</a>
 		{/if}
-		<a href="/message" class="flex-row flex-center gap-5 padding-10a">
+		<a href="/message" class="flex-row flex-center gap-5 padding-5a">
 			<img src={inquiry} alt="" class="icon-regular" />
 			{#if pathname == '/message'}
 				<p class="dark5-t text-bold text-medi">메세지</p>
@@ -66,7 +66,7 @@
 				<p class="dark3-t text-semi text-medi">메세지</p>
 			{/if}
 		</a>
-		<a href="/profile/{user.username}" class="flex-row flex-center gap-5 padding-10a">
+		<a href="/profile/{user.username}" class="flex-row flex-center gap-5 padding-5a">
 			<img src={myinfo} alt="" class="icon-regular" />
 			{#if pathname == `/profile/${user.username}`}
 				<p class="dark5-t text-bold text-medi">내 정보</p>
