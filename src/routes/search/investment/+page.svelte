@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { research1, research2, research3 } from '$lib/script/example';
-	const researchList: Research[] = [research1, research2, research3];
+	import { investment1, investment2, investment3 } from '$lib/script/example';
+	const investmentList: Investment[] = [investment1, investment2, investment3];
 	let searchList: Research[] | undefined = $state();
 	let filters: string[] = $state(['hello']);
 
@@ -34,7 +34,7 @@
 	{/each}
 </div>
 <div class="flex-column gap-10">
-	{#each researchList as item, idx}
+	{#each investmentList as item, idx}
 		<div class="flex-row padding-10a border-round border-1 border-dark1 border-solid gap-10">
 			<div>
 				<img src={item.picture} alt="" class="img-large border-round" />
@@ -66,5 +66,5 @@
 	{/each}
 </div>
 <div class="flex-column height-100p padding-30a">
-	
+
 </div>
