@@ -1,8 +1,39 @@
 <script lang="ts">
-	import type { PageProps } from '../$types';
-	let data: PageProps = $props();
+	import { investment1, investment2, investment3 } from '$lib/script/example';
+	const itemList: Investment[] = [investment1, investment2, investment3, investment1, investment2, investment3, investment1, investment2, investment3];
+	import map from '$lib/assets/icon/map.svg';
+	import calendar from '$lib/assets/icon/calendar.svg';
+	import view from '$lib/assets/icon/visibility.svg';
+
+	let { data } = $props();
+
+	console.log(data.username);
 </script>
 
 <div class="padding-30a flex-column fullsize gap-10">
-    {data.data}
+	<p class="text-large dark5-t text-bold">{data.username} 님 안녕하세요!</p>
+	<div class="flex-column gap-10">
+		<p class="text-bold text-large dark5-t">내가 작성한 투자</p>
+		<div class="flex-column gap-10 overflow-y height-40r">
+			{#each itemList as item}
+				<div class="flex-row padding-10a border-round border-1 border-dark1 border-solid gap-10">
+					<div class="flex-column gap-5">
+						<a class="width-fit" href="/mywork/investment/{data.username}/{item.id}">
+							<p class="text-large dark5-t text-bold ellipsis line-1">{item.title}</p>
+						</a>
+						<p class="text-regular dark3-t text-reuglar ellipsis line-1">{item.user.username}</p>
+						<p class="text-small dark3-t text-regular flex-center gap-3">
+							<img src={map} alt="" class="icon-small" />
+							{item.user.affiliation} | <img src={calendar} alt="" class="icon-small" />
+							{item.date} | <img src={view} alt="" class="icon-small" />
+							{item.view}
+						</p>
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+	<a href="/mywork/investment/{data.username}/new" class="primary-button border-round margin-at padding-10a flex-center">
+		<p class="text-large text-semi">새 투자 작성하기</p>
+	</a>
 </div>

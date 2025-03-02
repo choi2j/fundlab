@@ -1,11 +1,19 @@
 <script lang="ts">
 	import { research1, research2, research3 } from '$lib/script/example';
-	const itemList: Research[] = [research1, research2, research3, research1, research2, research3];
+	const itemList: Research[] = [
+		research1,
+		research2,
+		research3,
+		research1,
+		research2,
+		research3,
+		research1,
+		research2,
+		research3
+	];
 	import map from '$lib/assets/icon/map.svg';
 	import calendar from '$lib/assets/icon/calendar.svg';
 	import view from '$lib/assets/icon/visibility.svg';
-	import bookmark from '$lib/assets/icon/scrap.svg';
-	import bookmark_filled from '$lib/assets/icon/scrap_filled.svg';
 
 	let { data } = $props();
 
@@ -16,14 +24,11 @@
 	<p class="text-large dark5-t text-bold">{data.username} 님 안녕하세요!</p>
 	<div class="flex-column gap-10">
 		<p class="text-bold text-large dark5-t">내가 작성한 연구</p>
-		<div class="flex-column gap-10 overflow-y height-70p">
+		<div class="flex-column gap-10 overflow-y height-40r">
 			{#each itemList as item}
 				<div class="flex-row padding-10a border-round border-1 border-dark1 border-solid gap-10">
 					<div class="flex-column gap-5">
-						<a
-							class="width-fit"
-                            href="/mywork/research/{item.id}"
-						>
+						<a class="width-fit" href="/mywork/research/{data.username}/{item.id}">
 							<p class="text-large dark5-t text-bold ellipsis line-1">{item.title}</p>
 						</a>
 						<p class="text-regular dark3-t text-reuglar ellipsis line-1">{item.user.username}</p>
@@ -38,4 +43,10 @@
 			{/each}
 		</div>
 	</div>
+	<a
+		href="/mywork/research/{data.username}/new"
+		class="primary-button border-round margin-at padding-10a flex-center"
+	>
+		<p class="text-large text-semi">새 연구 작성하기</p>
+	</a>
 </div>
