@@ -1,0 +1,71 @@
+@import url('../style.css');
+
+/* a, button, input[type='button'], input[type='submit'] tag default settings */
+a,
+button,
+input[type='button'],
+input[type='submit'] {
+	border-radius: 12px;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+/* button background, color */
+.primary-button {
+	background-color: var(--primary);
+	color: var(--white);
+
+	* {
+		color: var(--white);
+	}
+}
+.secondary-button {
+	background-color: var(--secondary);
+	color: var(--white);
+
+	* {
+		color: var(--white);
+	}
+}
+.dark1-button {
+	background-color: var(--dark1);
+	color: var(--dark5);
+
+	* {
+		color: var(--dark5);
+	}
+}
+.dark2-button {
+	background-color: var(--dark2);
+	color: var(--dark5);
+
+	* {
+		color: var(--dark5);
+	}
+}
+.dark3-button {
+	background-color: var(--dark3);
+	color: var(--white);
+
+	* {
+		color: var(--white);
+	}
+}
+.dark4-button {
+	background-color: var(--dark4);
+	color: var(--white);
+
+	* {
+		color: var(--white);
+	}
+}
+.dark5-button {
+	background-color: var(--dark5);
+	color: var(--white);
+
+	* {
+		color: var(--white);
+	}
+}
