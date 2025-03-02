@@ -17,7 +17,5 @@
 	{#if pathname != '/' && pathname != '/signin' && pathname != '/signup'}
 		<Navbar {pathname} {user} />
 	{/if}
-	<div class="padding-30a flex-column fullsize gap-10">
-		{@render children()}
-	</div>
+	{@render children()}
 </div>

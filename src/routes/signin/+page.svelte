@@ -1,8 +1,13 @@
-<script>
+<script lang="ts">
 	import logo from '$lib/assets/img/logo_text_primary.svg';
 	import person from '$lib/assets/icon/certification_mobile.svg';
 	import password from '$lib/assets/icon/login_id_password.svg';
 	import login from '$lib/assets/icon/login_white.svg';
+
+	import { user } from '$lib/script/example';
+
+	let userData: User = user;
+	let inputData: string[] = ['', ''];
 </script>
 
 <div class="fullsize flex-column flex-center">
@@ -18,6 +23,7 @@
 				name=""
 				id=""
 				class="dark5-t text-regular text-medium width-100p"
+				bind:value={inputData[0]}
 			/>
 		</div>
 		<div
@@ -30,14 +36,24 @@
 				name=""
 				id=""
 				class="dark5-t text-regular text-medium width-100p"
+				bind:value={inputData[1]}
 			/>
 		</div>
-		<a
-			href="/main"
-			class="flex-center width-100p padding-10a border-round primary-button flex-row flex-start-j flex-center-a gap-10"
-		>
-			<img src={login} alt="" class="icon-small" />
-			<p>로그인</p>
-		</a>
+		{#if inputData[0] === userData.username && inputData[1] === userData.password}
+			<a
+				href="/main"
+				class="flex-center width-100p padding-10a border-round primary-button flex-row flex-start-j flex-center-a gap-10"
+			>
+				<img src={login} alt="" class="icon-small" />
+				<p class="text-medium">로그인</p>
+			</a>
+		{:else}
+			<button
+				class="flex-center width-100p padding-10a border-round primary-button flex-row flex-start-j flex-center-a gap-10"
+			>
+				<img src={login} alt="" class="icon-small" />
+				<p class="text-medium">로그인</p>
+			</button>
+		{/if}
 	</div>
 </div>
