@@ -1,21 +1,21 @@
 import logo from '$lib/assets/img/logo.png';
 
 const userCheck1: UserCheck = {
-	id: 1,
+	id: 1111,
 	username: 'john_doe',
 	email: 'john@example.com',
 	affiliation: 'Tech Corp'
 };
 
 const userCheck2: UserCheck = {
-	id: 2,
+	id: 2111,
 	username: 'jane_smith',
 	email: 'jane@example.com',
 	affiliation: 'Quantum Labs'
 };
 
 const userCheck3: UserCheck = {
-	id: 3,
+	id: 3111,
 	username: 'bob_jones',
 	email: 'bob@example.com',
 	affiliation: 'Eco Solutions',
@@ -23,7 +23,7 @@ const userCheck3: UserCheck = {
 
 // Research 예시 데이터 3개
 const research1: Research = {
-	id: 1,
+	id: 1221,
 	worktype: 'research',
 	title: 'AI Development Trends',
 	content: 'Detailed analysis of AI trends in 2025...',
@@ -42,7 +42,7 @@ const research1: Research = {
 };
 
 const research2: Research = {
-	id: 2,
+	id: 2221,
 	worktype: 'research',
 	title: 'Quantum Computing Basics',
 	content: 'Introduction to quantum computing principles...',
@@ -61,7 +61,7 @@ const research2: Research = {
 };
 
 const research3: Research = {
-	id: 3,
+	id: 3221,
 	worktype: 'research',
 	title: 'Climate Change Models',
 	content: 'Modeling climate change effects...',
@@ -81,7 +81,7 @@ const research3: Research = {
 
 // Investment 예시 데이터 3개
 const investment1: Investment = {
-	id: 1,
+	id: 1331,
 	worktype: 'investment',
 	title: 'Tech Startup Funding',
 	content: 'Investment opportunities in tech startups...',
@@ -100,7 +100,7 @@ const investment1: Investment = {
 };
 
 const investment2: Investment = {
-	id: 2,
+	id: 2331,
 	worktype: 'investment',
 	title: 'Green Energy Portfolio',
 	content: 'Building a sustainable energy investment portfolio...',
@@ -119,7 +119,7 @@ const investment2: Investment = {
 };
 
 const investment3: Investment = {
-	id: 3,
+	id: 3331,
 	worktype: 'investment',
 	title: 'Real Estate Trends',
 	content: 'Analysis of real estate market trends...',
@@ -138,7 +138,7 @@ const investment3: Investment = {
 };
 
 let user: User = {
-	id: 1,
+	id: 1234,
 	username: 'john_doe',
 	name: 'John Doe',
 	email: 'john@example.com',
@@ -154,7 +154,7 @@ let user: User = {
 }
 
 const user2: User = {
-	id: 2,
+	id: 2234,
 	username: 'jane_smith',
 	name: 'Jane Smith',
 	email: 'jane@example.com',
@@ -170,7 +170,7 @@ const user2: User = {
 };
 
 const user3: User = {
-	id: 3,
+	id: 3234,
 	username: 'bob_jones',
 	name: 'Bob Jones',
 	email: 'bob@example.com',

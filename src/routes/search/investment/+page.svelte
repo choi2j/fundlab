@@ -1,6 +1,16 @@
 <script lang="ts">
 	import { investment1, investment2, investment3 } from '$lib/script/example';
-	const itemList: Investment[] = [investment1, investment2, investment3];
+	const itemList: Investment[] = [
+		investment1,
+		investment2,
+		investment3,
+		investment1,
+		investment2,
+		investment3,
+		investment1,
+		investment2,
+		investment3
+	];
 	let searchList: Research[] | undefined = $state();
 	let filters: string[] = $state(['hello']);
 
@@ -13,7 +23,7 @@
 	import bookmark from '$lib/assets/icon/scrap.svg';
 	import bookmark_filled from '$lib/assets/icon/scrap_filled.svg';
 
-	let bookmarked: number[] = $state([0, 0, 0]);
+	let bookmarked: number[] = $state([0, 0, 0, 0, 0, 0, 0, 0, 0]);
 	let selected: Research | undefined = $state();
 
 	function selectItem(item: Research) {
@@ -33,7 +43,7 @@
 			class="dark5-t text-regular text-medium width-80p padding-5a"
 		/>
 	</div>
-	<div class="flex-row gap-10">
+	<div class="flex-row gap-10 overflow-x">
 		<button class="border-dark1 border-1 border-solid border-round padding-10a flex-center">
 			<img src={filter} alt="" class="icon-medium" />
 		</button>
@@ -44,7 +54,7 @@
 			</button>
 		{/each}
 	</div>
-	<div class="flex-column gap-10">
+	<div class="flex-column gap-10 overflow-y">
 		{#each itemList as item, idx}
 			<div class="flex-row padding-10a border-round border-1 border-dark1 border-solid gap-10">
 				<div class="flex-column gap-5">
@@ -102,6 +112,12 @@
 		<p class="text-medium text-regular dark5-t">
 			{selected.summary}
 		</p>
+		<a
+			href="/search/investment/{selected.id}"
+			class="padding-10a primary-button flex-center margin-at"
+		>
+			<p class="text-semi text-medium">자세한 내용 확인</p>
+		</a>
 	{:else}
 		<div class="fullsize flex-center">
 			<p class="text-regular text-medium dark3-t">Select an item from the list</p>

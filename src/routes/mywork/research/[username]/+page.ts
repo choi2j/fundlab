@@ -1,5 +1,5 @@
-export const load = ({ params }) => {
-    return {
-        username: params.username
-    }
+export function load({ params }) {
+	return {
+		username: params.username
+	};
 }

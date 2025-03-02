@@ -49,6 +49,40 @@ body {
 	width: 100%;
 }
 
+/* Scrollbar */
+
+*::-webkit-scrollbar-track {
+	-webkit-box-shadow: none;
+	background-color: none;
+}
+
+*::-webkit-scrollbar {
+	width: 0.2rem;
+	height: 0.2rem;
+	background-color: none;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: none;
+}
+
+*:hover::-webkit-scrollbar-track {
+	-webkit-box-shadow: none;
+	background-color: var(--dark0);
+}
+
+*:hover::-webkit-scrollbar {
+	width: 0.2rem;
+	height: 0.2rem;
+	background-color: var(--dark0);
+	border-radius: 12px;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+	background-color: var(--dark2);
+	border-radius: 12px;
+}
+
 /* Image Size Classes */
 .img-small {
 	height: 2rem;
@@ -551,4 +585,14 @@ body {
 
 .nowrap {
 	white-space: nowrap;
+}
+
+/* Overflow Class */
+.overflow-x {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.overflow-y {
+	overflow-x: hidden;
+	overflow-y: auto;
 }
