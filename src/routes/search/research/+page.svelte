@@ -113,7 +113,7 @@
 			{selected.summary}
 		</p>
 		<a
-			href="/search/investment/{selected.id}"
+			href="/search/research/{selected.id}"
 			class="padding-10a primary-button flex-center margin-at"
 		>
 			<p class="text-semi text-medium">자세한 내용 확인</p>
