@@ -7,16 +7,10 @@
 	import cert from '$lib/assets/icon/certification_simple_white.svg';
 	import login from '$lib/assets/icon/login_white.svg';
 
-	let type: number[] = [0, 0];
+	let type: number = 0;
 
-	function changeType(num: number) {
-		if (num === 0) {
-			type[0] = 1;
-			type[1] = 0;
-		} else {
-			type[0] = 0;
-			type[1] = 1;
-		}
+	function changeType() {
+		type = type ? 0 : 1;
 	}
 </script>
 
@@ -26,7 +20,7 @@
 		<div
 			class="width-100p padding-10a border-round border-dark1 border-1 border-solid flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={person} alt="" class="icon-small" />
+			<img src={person} alt="" class="icon-regular" />
 			<input
 				type="text"
 				placeholder="아이디"
@@ -38,7 +32,7 @@
 		<div
 			class="width-100p padding-10a border-round border-dark1 border-1 border-solid flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={mail} alt="" class="icon-small" />
+			<img src={mail} alt="" class="icon-regular" />
 			<input
 				type="text"
 				placeholder="이메일"
@@ -46,12 +40,12 @@
 				id=""
 				class="dark5-t text-regular text-medium width-80p padding-5a"
 			/>
-			<button class="dark1-button nowrap padding-5a">인증</button>
+			<button class="dark1-button nowrap padding-5a margin-la">인증</button>
 		</div>
 		<div
 			class="width-100p padding-10a border-round border-dark1 border-1 border-solid flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={mail} alt="" class="icon-small" />
+			<img src={mail} alt="" class="icon-regular" />
 			<input
 				type="text"
 				placeholder="인증번호"
@@ -63,7 +57,7 @@
 		<div
 			class="width-100p padding-10a border-round border-dark1 border-1 border-solid flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={calendar} alt="" class="icon-small" />
+			<img src={calendar} alt="" class="icon-regular" />
 			<input
 				type="date"
 				placeholder="생년월일"
@@ -75,7 +69,7 @@
 		<div
 			class="width-100p padding-10a border-round border-dark1 border-1 border-solid flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={password} alt="" class="icon-small" />
+			<img src={password} alt="" class="icon-regular" />
 			<input
 				type="password"
 				placeholder="비밀번호"
@@ -87,7 +81,7 @@
 		<div
 			class="width-100p padding-10a border-round border-dark1 border-1 border-solid flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={password} alt="" class="icon-small" />
+			<img src={password} alt="" class="icon-regular" />
 			<input
 				type="password"
 				placeholder="비밀번호 확인"
@@ -97,32 +91,32 @@
 			/>
 		</div>
 		<div class="width-100p flex-row gap-10">
-			{#if type[0] === 0}
+			{#if type === 1}
 				<button
 					onclick={() => {
-						changeType(0);
+						changeType();
 					}}
 					class="width-50p padding-10a border-round border-dark1 border-1 border-solid flex-center-a"
 					>연구자</button
 				>
 				<button
 					onclick={() => {
-						changeType(1);
+						changeType();
 					}}
 					class="width-50p padding-10a border-round dark1-button flex-center-a"
 					>투자자</button
 				>
-			{:else if type[0] === 1}
+			{:else if type === 0}
 				<button
 					onclick={() => {
-						changeType(0);
+						changeType();
 					}}
 					class="width-50p padding-10a border-round dark1-button flex-center-a"
 					>연구자</button
 				>
 				<button
 					onclick={() => {
-						changeType(1);
+						changeType();
 					}}
 					class="width-50p padding-10a border-round border-dark1 border-1 border-solid flex-center-a"
 					>투자자</button
@@ -133,14 +127,14 @@
 			href="/main"
 			class="flex-center width-100p padding-10a border-round secondary-button flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={cert} alt="" class="icon-small" />
+			<img src={cert} alt="" class="icon-regular" />
 			<p class="text-semi">간편인증</p>
 		</a>
 		<a
 			href="/signin"
 			class="flex-center width-100p padding-10a border-round primary-button flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={login} alt="" class="icon-small" />
+			<img src={login} alt="" class="icon-regular" />
 			<p class="text-semi">로그인</p>
 		</a>
 	</div>

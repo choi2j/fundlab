@@ -16,7 +16,7 @@
 		<div
 			class="width-100p padding-10a border-round border-dark1 border-1 border-solid flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={person} alt="" class="icon-small" />
+			<img src={person} alt="" class="icon-regular" />
 			<input
 				type="text"
 				placeholder="아이디"
@@ -29,7 +29,7 @@
 		<div
 			class="width-100p padding-10a border-round border-dark1 border-1 border-solid flex-row flex-start-j flex-center-a gap-10"
 		>
-			<img src={password} alt="" class="icon-small" />
+			<img src={password} alt="" class="icon-regular" />
 			<input
 				type="password"
 				placeholder="비밀번호"
@@ -44,14 +44,17 @@
 				href="/main"
 				class="flex-center width-100p padding-10a border-round primary-button flex-row flex-start-j flex-center-a gap-10"
 			>
-				<img src={login} alt="" class="icon-small" />
+				<img src={login} alt="" class="icon-regular" />
 				<p class="text-medium">로그인</p>
 			</a>
 		{:else}
 			<button
 				class="flex-center width-100p padding-10a border-round primary-button flex-row flex-start-j flex-center-a gap-10"
+				onclick={() => {
+					alert('입력이 잘못되었습니다.');
+				}}
 			>
-				<img src={login} alt="" class="icon-small" />
+				<img src={login} alt="" class="icon-regular" />
 				<p class="text-medium">로그인</p>
 			</button>
 		{/if}
