@@ -1,11 +1,23 @@
-<script>
+<script lang="ts">
 	import logo from '$lib/assets/img/logo_text_primary.svg';
 	import person from '$lib/assets/icon/certification_mobile.svg';
 	import password from '$lib/assets/icon/login_id_password.svg';
 	import mail from '$lib/assets/icon/mail.svg';
-    import calendar from '$lib/assets/icon/calendar.svg';
-    import cert from '$lib/assets/icon/certification_simple_white.svg';
+	import calendar from '$lib/assets/icon/calendar.svg';
+	import cert from '$lib/assets/icon/certification_simple_white.svg';
 	import login from '$lib/assets/icon/login_white.svg';
+
+	let type: number[] = [0, 0];
+
+	function changeType(num: number) {
+		if (num === 0) {
+			type[0] = 1;
+			type[1] = 0;
+		} else {
+			type[0] = 0;
+			type[1] = 1;
+		}
+	}
 </script>
 
 <div class="fullsize flex-column flex-center">
@@ -83,6 +95,39 @@
 				id=""
 				class="dark5-t text-regular text-medium width-80p padding-5a"
 			/>
+		</div>
+		<div class="width-100p flex-row gap-10">
+			{#if type[0] === 0}
+				<button
+					onclick={() => {
+						changeType(0);
+					}}
+					class="width-50p padding-10a border-round border-dark1 border-1 border-solid flex-center-a"
+					>연구자</button
+				>
+				<button
+					onclick={() => {
+						changeType(1);
+					}}
+					class="width-50p padding-10a border-round dark1-button flex-center-a"
+					>투자자</button
+				>
+			{:else if type[0] === 1}
+				<button
+					onclick={() => {
+						changeType(0);
+					}}
+					class="width-50p padding-10a border-round dark1-button flex-center-a"
+					>연구자</button
+				>
+				<button
+					onclick={() => {
+						changeType(1);
+					}}
+					class="width-50p padding-10a border-round border-dark1 border-1 border-solid flex-center-a"
+					>투자자</button
+				>
+			{/if}
 		</div>
 		<a
 			href="/main"
