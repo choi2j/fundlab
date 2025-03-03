@@ -27,7 +27,7 @@ const research1: Research = {
 	worktype: 'research',
 	title: 'AI Development Trends',
 	content: 'Detailed analysis of AI trends in 2025...',
-	summary: 'Overview of AI advancements',
+	summary: 'Overview of AI advancements Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.',
 	picture: logo,
 	file: {
 		name: 'ai_report.pdf',
@@ -46,7 +46,7 @@ const research2: Research = {
 	worktype: 'research',
 	title: 'Quantum Computing Basics',
 	content: 'Introduction to quantum computing principles...',
-	summary: 'Basics of quantum computing',
+	summary: 'Basics of quantum computing Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.',
 	picture: logo,
 	file: {
 		name: 'quantum_intro.pdf',
@@ -65,7 +65,7 @@ const research3: Research = {
 	worktype: 'research',
 	title: 'Climate Change Models',
 	content: 'Modeling climate change effects...',
-	summary: 'Climate prediction models',
+	summary: 'Climate prediction models Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.',
 	picture: logo,
 	file: {
 		name: 'climate_models.pdf',
@@ -85,7 +85,7 @@ const investment1: Investment = {
 	worktype: 'investment',
 	title: 'Tech Startup Funding',
 	content: 'Investment opportunities in tech startups...',
-	summary: 'Tech startup investment guide',
+	summary: 'Tech startup investment guide Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.',
 	picture: logo,
 	file: {
 		name: 'startup_report.pdf',
@@ -104,7 +104,7 @@ const investment2: Investment = {
 	worktype: 'investment',
 	title: 'Green Energy Portfolio',
 	content: 'Building a sustainable energy investment portfolio...',
-	summary: 'Green energy investment options',
+	summary: 'Green energy investment options Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.',
 	picture: logo,
 	file: {
 		name: 'energy_portfolio.pdf',
@@ -123,7 +123,7 @@ const investment3: Investment = {
 	worktype: 'investment',
 	title: 'Real Estate Trends',
 	content: 'Analysis of real estate market trends...',
-	summary: 'Real estate investment insights',
+	summary: 'Real estate investment insights Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus quod tempora iusto veritatis commodi itaque tempore animi similique esse numquam error provident perspiciatis aliquam dolorem, repellendus laborum cum ratione.',
 	picture: logo,
 	file: {
 		name: 'real_estate_analysis.pdf',
